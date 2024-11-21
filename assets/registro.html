@@ -19,7 +19,7 @@
             <!-- Tabs para cambiar entre usuario y psicólogo -->
             <div class="flex justify-center mb-6">
                 <button id="tabUsuario" class="py-2 px-4 rounded-lg bg-purple-600 text-white font-medium hover:bg-gray-300">Usuario</button>
-                <button id="tabPsicologo" class="py-2 px-4 rounded-lg bg-gray-200 text-gray-800 font-medium ml-2 hover:bg-gray-300">Psicólogo</button>
+                <button id="tabPsicologo" class="py-2 px-4 rounded-lg bg-gray-200 text-white font-medium ml-2 hover:bg-gray-300">Psicólogo</button>
             </div>
 
             <!-- Formulario -->
@@ -60,7 +60,7 @@
                 </div>
 
                 <!-- Botón de registro -->
-                <div>
+                <div class="flex justify-center text-center">
                     <a href="psicologos.html" type="submit" class="w-full py-2 px-4 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700">Registrarse</a>
                 </div>
             </form>
@@ -79,7 +79,7 @@
                 tabUsuario.classList.add("bg-purple-600", "text-white");
                 tabUsuario.classList.remove("bg-gray-200", "text-gray-800");
                 tabPsicologo.classList.add("bg-gray-200", "text-gray-800");
-                tabPsicologo.classList.remove("bg-purple-500", "text-white");
+                tabPsicologo.classList.remove("bg-purple-600", "text-white");
             });
 
             tabPsicologo.addEventListener("click", () => {
@@ -87,7 +87,7 @@
                 psicologoFields.classList.remove("hidden");
                 tabPsicologo.classList.add("bg-purple-600", "text-white");
                 tabPsicologo.classList.remove("bg-gray-200", "text-gray-800");
-                tabUsuario.classList.add("bg-gray-200", "text-white");
+                tabUsuario.classList.add("bg-gray-200", "text-gray-800");
                 tabUsuario.classList.remove("bg-purple-600", "text-white");
             });
         </script>
