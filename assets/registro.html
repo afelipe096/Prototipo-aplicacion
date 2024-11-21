@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
-<body class="bg-gradient-to-r from-purple-100 to-white min-h-screen flex items-center justify-center">
+<body class="bg-gradient-to-tl from-indigo-200 to-white min-h-screen flex items-center justify-center">
   <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Registro</h2>
     <p class="text-sm text-gray-600 mb-6">
-      Regístrate como <span id="userType" class="font-bold">Usuario</span> para acceder a nuestros servicios.
+    Regístrate como <span id="userType" class="font-bold">Usuario</span> para acceder a nuestros servicios.
     </p>
 
     <!-- Tabs para cambiar entre usuario y psicólogo -->
@@ -125,7 +126,7 @@
         psicologoFields.classList.remove("hidden");
         tabPsicologo.classList.add("bg-purple-600", "text-white");
         tabPsicologo.classList.remove("bg-gray-200", "text-gray-800");
-        tabUsuario.classList.add("bg-gray-200", "text-gray-800");
+        tabUsuario.classList.add("bg-gray-200", "text-white");
         tabUsuario.classList.remove("bg-purple-600", "text-white");
     });
     </script>

@@ -1,0 +1,26 @@
+
+  .footer-fixed {
+    background-color: white;
+    border-top: 1px solid #2e017c; /* Morado */
+    color: #2e017c; /* Texto morado */
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Asegura que el body ocupe el 100% del viewport */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  /* Empuja el contenido para que el footer esté abajo */
+  main {
+    flex: 1;
+  }
+
